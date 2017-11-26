@@ -1,4 +1,4 @@
-# eStarter. The beginning of your beautiful, custom ecommerce on Laravel.
+# Profimak. The beginning of your beautiful, custom ecommerce on Laravel.
 
 ## Features
 - Create and organize categories & subcategoires
@@ -14,14 +14,14 @@
 ## Installation
 - Clone repository
 ```
-$ git clone https://github.com/updivision/estarter-ecommerce-for-laravel.git
+$ git clone https://github.com/GitJove/profimak.git
 ```
 - Run in your terminal
 ```
 $ composer install
 $ php artisan key:generate
 ```
-- Setup database connection in .env file
+- Setup database connection in .env file ( Change .env.example file to .env)
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -31,14 +31,35 @@ DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
 
+- Install node package manager NPM
+```
+$ npm install
+
+- Install composer
+```
+$ composer install
+
 - Migrate tables with demo data
 ```
 $ php artisan migrate --seed
 ```
 
+- Laravel 5 Files Folders Permission and Ownership Setup
+```
+$ cd /dir/of/laravel
+$ chmod -R 777 ./storage ./bootstrap
+
+You may need to use sudo on these commands if you get permission denied errors, i.e.:
+$ sudo cd /path/to/profimak
+$ sudo chmod -R 777 ./storage ./bootstrap
+
+For more info:
+https://www.itechempires.com/2017/06/laravel-5-files-folders-permission-ownership-setup/
+```
+
 - Access it on
 ```
-http://localhost/estarter-ecommerce-for-laravel/admin/login
+http://localhost/profimak/admin/login
 ```
 
 ## Setup
@@ -80,7 +101,7 @@ After creating these, you’re ready to add your first product.
  - [Andrei Barta](https://github.com/abarta)
  
 ## License
-eStarter is based on Backpack which is free for non-commercial use and $19/project for commercial use. Please see [License File](LICENSE.md) and [backpackforlaravel.com](https://backpackforlaravel.com/#pricing) for more information.
+Profimak is based on Backpack which is free for non-commercial use and $19/project for commercial use. Please see [License File](LICENSE.md) and [backpackforlaravel.com](https://backpackforlaravel.com/#pricing) for more information.
 
 [ico-version]: https://img.shields.io/packagist/v/backpack/base.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
